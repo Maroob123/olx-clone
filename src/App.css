@@ -93,18 +93,21 @@
 
 /* splitnavbar */
 #link{
-  font-size: 18px !important;
+  font-size: 15px !important;
   color: #002f34 !important;
-  font-weight: bold !important;
   margin-right: 20px !important;
   text-decoration: none !important;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#link:hover{
+  font-weight: bold;
 }
 
 #megaMenu{
-  font-size: 20px;
+  font-size: 15px;
   border: none;
   background-color: white;
-  margin-left: 160px;
+  margin-left: 100px;
   margin-right: 70px;
   background-image: url('./images/drop.png') ;
   background-repeat: no-repeat;
@@ -129,7 +132,7 @@ input[type="button"]::-moz-focus-inner {
 }
 
 #loadmore{
-  margin-top: 800px;
+  margin-top: 0px;
   color: #002f34;
   font-size: 20px;
   background-color: white;
@@ -144,14 +147,12 @@ input[type="button"]::-moz-focus-inner {
   max-width: 100%;
   margin:auto;
   max-height: 100%;  
-  position: absolute;
   vertical-align: middle;
   margin:auto;
   top:0;
   bottom:0;
   left:0;
   right:0;
-  margin-top: 135px;
   object-fit: cover;
   overflow: hidden;
 }

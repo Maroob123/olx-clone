@@ -5,28 +5,24 @@ import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import logo from "../images/olx-logo.png";
 import ArrowDropDownOutlinedIcon from '@material-ui/icons/ArrowDropDownOutlined';
+import {minHeight} from '@material-ui/system';
 
 import "../App.css";
 // import Autocomplete from "./countrysearch"
 // import NewComponent from "./accordion";
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
   menuButton: {
     marginRight: theme.spacing(2),
   },
-  title: {
-    flexGrow: 1,
-  },
 }));
 
-export default function ButtonAppBar() {
+function ButtonAppBar() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root} >
+    <>
+    <div>
       <AppBar>
         <Toolbar position="static"  style={{ backgroundColor: "#eeeeee" }}>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
@@ -38,7 +34,9 @@ export default function ButtonAppBar() {
           <a href="http://localhost:3000/"  id="link">Login</a>
           <button className="border">+ SELL</button>
         </Toolbar>
-        <Toolbar position="relative" style={{ backgroundColor: "white", minHeight: "20px !important"}}>
+      </AppBar>
+    </div>
+    <div position="relative" minHeight="10%" style={{ backgroundColor: "white", display: "flex", padding: "10px 30px", marginTop: "75px", boxShadow: "0px 1px 7px 0px silver"}}>
           {/* <button id="megaMenu">All categories</button> */}
           <input type="button" value="ALL CATEGORIES" id="megaMenu"/>
           <a href="#" id="link">Mobile Phones</a>
@@ -48,8 +46,16 @@ export default function ButtonAppBar() {
           <a href="#" id="link">TV-Video-Audio</a>
           <a href="#" id="link">Tablets</a>
           <a href="#" id="link">Land & Plots</a>
-        </Toolbar>
-      </AppBar>
-    </div>
+        </div>
+    </>
   );
 }
+
+// function smlinks(){
+//   return(
+//   );
+// }
+
+export default ButtonAppBar;
+
+ 

@@ -1,6 +1,5 @@
 import React from "react"
 import { Component } from "react"
-import ReactDom from "react-dom"
 import "../App.css"
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
@@ -87,7 +86,7 @@ class las extends Component {
 
                         </td>
                     </tr>
-                    <tr style={{backgroundColor: "#002f34", color: "white", borderTop:"10px solid #002f34", borderBottom: "10px solid #002f34"}}>
+                    <tr style={{backgroundColor: "#002f34", color: "white", borderTop:"10px solid #002f34", borderBottom: "10px solid #002f34", fontSize: "small"}}>
                         <td colSpan="2" style={{textAlign: "right"}}>Other countries: India-South Africa-Indonesia</td>
                         <td colSpan="2"></td>
                         <td colSpan="2">Free Classifieds in Pakistan. © 2006-2020 OLX</td>
