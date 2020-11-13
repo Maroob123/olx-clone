@@ -6,24 +6,14 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import TwitterIcon from '@material-ui/icons/Twitter';
 
-const style3 = {
-    width: "100%",
-    marginLeft: "0%",
-    marginRight: "0%",
-    color: "white",
-    backgroundColor: "#002f34",
-    fontFamily: "Arial",
-    marginTop: "12pc",
-    height: "12px"
-};
 
 
 class las extends Component {
     render() {
         return (
             <>
-                <table style={{ border: "1px solid white", borderCollapse: "collapse" }}>
-                    
+                <table style={{ border: "1px solid white", borderCollapse: "collapse", width: "100%" }}>
+                    <tbody>                    
                     <tr style={{ backgroundColor: "#DCDCDC", marginLeft: "50px", marginRight: "50px" }}>
                         <td>
                             <ul>
@@ -69,16 +59,17 @@ class las extends Component {
                                     <FacebookIcon /> <TwitterIcon /> <InstagramIcon /> <YouTubeIcon />
                                 </li>
                                 <li id="ftli" style={{color: "#DCDCDC" }}>1</li>
-                                <li id="ftli"><img src="https://statics.olx.com.pk/external/base/img/appstore.png" alt=""/> <img src="https://statics.olx.com.pk/external/base/img/playstore.png" alt=""/></li>
+                                <li id="ftli"><img src="https://statics.olx.com.pk/external/base/img/appstore.png" alt="olximage"/> <img src="https://statics.olx.com.pk/external/base/img/playstore.png" alt=""/></li>
                             </ul>    
 
                         </td>
                     </tr>
                     <tr style={{backgroundColor: "#002f34", color: "white", borderTop:"10px solid #002f34", borderBottom: "10px solid #002f34", fontSize: "small"}}>
-                        <td colSpan="2" style={{textAlign: "right"}}>Other countries: India-South Africa-Indonesia</td>
+                        <td colSpan="2" style={{paddingLeft: "60px"}}>Other countries: India-South Africa-Indonesia</td>
                         <td colSpan="2"></td>
-                        <td colSpan="2">Free Classifieds in Pakistan. © 2006-2020 OLX</td>
+                        <td colSpan="2" style={{paddingRight:"60px"}}>Free Classifieds in Pakistan. © 2006-2020 OLX</td>
                     </tr>
+                    </tbody>
                 </table>
             </>
         );

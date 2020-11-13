@@ -4,10 +4,11 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import logo from "../images/olx-logo.png";
-import ArrowDropDownOutlinedIcon from '@material-ui/icons/ArrowDropDownOutlined';
-import {minHeight} from '@material-ui/system';
-
 import "../App.css";
+import { Link } from 'react-router-dom';
+import Modal from 'react-modal';
+
+
 // import Autocomplete from "./countrysearch"
 // import NewComponent from "./accordion";
 
@@ -17,37 +18,76 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function ButtonAppBar() {
-  const classes = useStyles();
+// const classes = useStyles();
+class Navbar extends React.Component{
+  constructor() {
+    super();
+    this.state = {
+      showModal: false
+    };
 
+    this.handleOpenModal = this.handleOpenModal.bind(this);
+    this.handleCloseModal = this.handleCloseModal.bind(this);
+  }
+
+  handleOpenModal() {
+    this.setState({ showModal: true });
+  }
+
+  handleCloseModal() {
+    this.setState({ showModal: false });
+  }
+  render(){
+    Modal.defaultStyles = {}
   return (
     <>
-    <div>
-      <AppBar>
-        <Toolbar position="static"  style={{ backgroundColor: "#eeeeee" }}>
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <img src={logo} width="68px" height="48px" alt="olx-logo" />
-          </IconButton>
-          <input type="text" name="search" placeholder="Karachi Pakistan" id="location" />
-          <input type="text" name="search" placeholder="Find Cars, Mobile Phones and more.." id="searchbox" />
-          <button id="search-btn"></button>
-          <a href="http://localhost:3000/"  id="link">Login</a>
-          <button className="border">+ SELL</button>
-        </Toolbar>
-      </AppBar>
-    </div>
-    <div position="relative" minHeight="10%" style={{ backgroundColor: "white", display: "flex", padding: "10px 30px", marginTop: "75px", boxShadow: "0px 1px 7px 0px silver"}}>
-          <input type="button" value="ALL CATEGORIES" id="megaMenu"/>
-          <a id="link">Mobile Phones</a>
-          <a id="link">Cars</a>
-          <a id="link">Motorcycle</a>
-          <a id="link">Houses</a>
-          <a id="link">TV-Video-Audio</a>
-          <a id="link">Tablets</a>
-          <a id="link">Land & Plots</a>
-        </div>
+      <div>
+        <AppBar>
+          <Toolbar position="static" style={{ backgroundColor: "#eeeeee" }}>
+            <Link to='/'>
+              <IconButton edge="start" className="menuButton" color="inherit" aria-label="menu">
+                <img src={logo} width="68px" height="48px" alt="olx-logo" />
+              </IconButton>
+            </Link>
+            <input type="text" name="search" placeholder="Karachi Pakistan" id="location" />
+            <input type="text" name="search" placeholder="Find Cars, Mobile Phones and more.." id="searchbox" />
+            <button id="search-btn"></button>
+            <li href="/" id="link" onClick={this.handleOpenModal}>Login</li>
+            <Link to='./post' className="border">
+            <span ><b>+</b> SELL</span>
+            </Link>
+              <Modal
+                isOpen={this.state.showModal}
+                contentLabel="Minimal Modal Example"
+                className="login"
+              >
+                <div>
+                  <div onClick={this.handleCloseModal} className="close">&#10006;</div>
+                  <img src="https://i.imgur.com/2dywpzc.png"/>
+                </div>
+              </Modal>
+          </Toolbar>
+        </AppBar>
+      </div>
     </>
   );
+}
+}
+class Mininav extends React.Component {
+  render() {
+    return (
+      <div position="relative" style={{ backgroundColor: "white", display: "flex", padding: "10px 30px", marginTop: "75px", boxShadow: "0px 1px 7px 0px silver", zIndex: "1", }}>
+        <input type="button" value="ALL CATEGORIES" id="megaMenu" />
+        <li id="link">Mobile Phones</li>
+        <li id="link">Cars</li>
+        <li id="link">Motorcycle</li>
+        <li id="link">Houses</li>
+        <li id="link">TV-Video-Audio</li>
+        <li id="link">Tablets</li>
+        <li id="link">Land & Plots</li>
+      </div>
+    )
+  }
 }
 
 // function smlinks(){
@@ -55,6 +95,5 @@ function ButtonAppBar() {
 //   );
 // }
 
-export default ButtonAppBar;
+export { Navbar, Mininav };
 
- 

@@ -79,8 +79,8 @@
 }
 
 .border {
-  width: 7%;
-  height: 50px;
+  /* width: 7%; */
+  padding: 5px 15px;
   border-radius: 40px;
   color: #002f34;
   font-weight: bolder;
@@ -89,6 +89,8 @@
   border-style: solid;
   border-color: blue yellow orange;
   position: relative;
+  text-decoration: none;
+  background-color: white;
 }
 
 /* splitnavbar */
@@ -98,15 +100,12 @@
   margin-right: 20px !important;
   text-decoration: none !important;
   font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
 }
-#link:hover{
-  font-weight: bold;
-  /* text-shadow: 2px 2px 5px #002f34; */
-  /* color: white; */
-  /* text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
-  color: #010c0e;
-  cursor: pointer;
 
+#link:hover{
+  color:  lightblue;
+  cursor: pointer;
 }
 
 #megaMenu{
@@ -170,4 +169,10 @@ input[type="button"]::-moz-focus-inner {
   text-decoration: none;
   padding-left: 20px;
   padding-right: 0%;
+}
+
+.login{
+  width: 35rem !important;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.25) !important;
+  padding: 3% !important;
 }
