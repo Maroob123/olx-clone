@@ -28,7 +28,7 @@ function ButtonAppBar() {
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <img src={logo} width="68px" height="48px" alt="olx-logo" />
           </IconButton>
-          <input type="text" name="search" placeholder="Search.." id="location" />
+          <input type="text" name="search" placeholder="Karachi Pakistan" id="location" />
           <input type="text" name="search" placeholder="Find Cars, Mobile Phones and more.." id="searchbox" />
           <button id="search-btn"></button>
           <a href="http://localhost:3000/"  id="link">Login</a>
@@ -37,15 +37,14 @@ function ButtonAppBar() {
       </AppBar>
     </div>
     <div position="relative" minHeight="10%" style={{ backgroundColor: "white", display: "flex", padding: "10px 30px", marginTop: "75px", boxShadow: "0px 1px 7px 0px silver"}}>
-          {/* <button id="megaMenu">All categories</button> */}
           <input type="button" value="ALL CATEGORIES" id="megaMenu"/>
-          <a href="#" id="link">Mobile Phones</a>
-          <a href="#" id="link">Cars</a>
-          <a href="#" id="link">Motorcycle</a>
-          <a href="#" id="link">Houses</a>
-          <a href="#" id="link">TV-Video-Audio</a>
-          <a href="#" id="link">Tablets</a>
-          <a href="#" id="link">Land & Plots</a>
+          <a id="link">Mobile Phones</a>
+          <a id="link">Cars</a>
+          <a id="link">Motorcycle</a>
+          <a id="link">Houses</a>
+          <a id="link">TV-Video-Audio</a>
+          <a id="link">Tablets</a>
+          <a id="link">Land & Plots</a>
         </div>
     </>
   );

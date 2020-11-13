@@ -72,8 +72,8 @@
   font-size: 5px;
   background-position: 3px 3px;
   border-radius: 4px;
-  background-image: url('./images/search-icon.png') ;
-  background-color: white;
+  background-image: url('./images/img1123.jpg') ;
+  background-color: #002f34;
   background-repeat: no-repeat;
   margin-right: 30px;
 }
@@ -101,6 +101,12 @@
 }
 #link:hover{
   font-weight: bold;
+  /* text-shadow: 2px 2px 5px #002f34; */
+  /* color: white; */
+  /* text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
+  color: #010c0e;
+  cursor: pointer;
+
 }
 
 #megaMenu{

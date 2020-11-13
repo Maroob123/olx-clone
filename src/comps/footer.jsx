@@ -23,19 +23,7 @@ class las extends Component {
         return (
             <>
                 <table style={{ border: "1px solid white", borderCollapse: "collapse" }}>
-                    <tr>
-                        <td colSpan="2" style={{ width: "33.3%" }}><img src="https://statics.olx.com.pk/external/base/img/phone-app.png" /></td>
-                        <td colSpan="2" style={{ width: "33.3%", color: "#002f34", fontFamily: "timesNewRoman", borderRight: "2px solid #ddd" }}>
-                            <h1>TRY THE OLX APP</h1>
-                            <h3>Buy, sell and find just about anything using the app on your mobile.</h3>
-                            {/* <div style={{color: "gray"}}></div> */}
-                        </td>
-                        <td colSpan="2" style={{ width: "33.3%" }}>
-                            <h3 style={{ marginLeft: "50px", fontFamily: "TimesNewRoman", color: "#002f34" }}>GET YOUR APP TODAY</h3>
-                            <img src="https://statics.olx.com.pk/external/base/img/appstore_2x.png" style={{ marginRight: "10px", marginLeft: "30px" }} />
-                            <img src="https://statics.olx.com.pk/external/base/img/playstore_2x.png" />
-                        </td>
-                    </tr>
+                    
                     <tr style={{ backgroundColor: "#DCDCDC", marginLeft: "50px", marginRight: "50px" }}>
                         <td>
                             <ul>

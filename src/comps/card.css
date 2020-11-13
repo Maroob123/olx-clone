@@ -1,0 +1,26 @@
+.main{
+    border: 2px solid #ccc;
+    justify-content: space-around;
+    cursor: pointer;
+    margin: 10px;
+}
+.main:hover{
+    border: 2px solid black;
+}
+
+.cardImg{
+    width: 260px;
+    height: 200px;
+    padding: 20px;
+    align-items: center;
+}
+
+div {
+    display: grid;
+}
+.cardfooter{
+    text-align: end;
+    margin: revert;
+    font-size: small;
+    color: gray;
+}
