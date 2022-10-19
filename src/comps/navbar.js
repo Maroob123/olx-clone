@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+// import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
@@ -12,11 +12,11 @@ import Modal from 'react-modal';
 // import Autocomplete from "./countrysearch"
 // import NewComponent from "./accordion";
 
-const useStyles = makeStyles((theme) => ({
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-}));
+// const useStyles = makeStyles((theme) => ({
+//   menuButton: {
+//     marginRight: theme.spacing(2),
+//   },
+// }));
 
 // const classes = useStyles();
 class Navbar extends React.Component{

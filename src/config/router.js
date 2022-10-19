@@ -1,18 +1,18 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from "../Home";
-import post from "../comps/post";
+import Post from "../comps/post";
 // import ShowMore from "../comps/fullpage"
 
 class AppRouter extends React.Component {
     render() {
         return (
             <Router>
-                <Switch>
-                    <Route path='/' exact component={Home} />
-                    <Route path='/post' component={post} />
+                <Routes>
+                    <Route path='/' exact element={<Home/>}  />
+                    <Route path='/post' element={<Post/>}  />
                     {/* <Route path='/ShowMore' component={ShowMore} /> */}
-                </Switch>
+                </Routes>
             </Router>
         )
     }
